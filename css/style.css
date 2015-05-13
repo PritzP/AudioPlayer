@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	overflow-y:hidden;
+}
+
+#outer-wrapper { 
+	top:0 !important;
+	font-family:'Insert Regular', Helvetica, arial, sans-serif;
+}
+
+#main-player {
+	height: 47px;
+}
+
+#main-player-inner {
+	width: 945px;
+	margin: 0 auto;
+	padding-top: 14px;
+}
+
+#subcontrollers {
+	float: right;
+	width: 80px; /* 80px with download option */
+}
+
+#subcontrollers .icon.download {
+	top: 0px;
+}
+
+#ct-track-desc{
+	width: 200px;
+	float: left;
+	clear: right;
+	overflow: hidden;
+	margin-left: 10px;
+	white-space: nowrap;
+}
+
+#ct-track-desc p{
+	white-space: nowrap;
+	width: 100%;
+	left: 0px;
+	position:relative;
+}
+
+#ct-track-desc p.showEllipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#controls #actionBtns{
+	width: auto;
+}
+
+#controls #actionBtns p{
+	float: left;
+	clear: right;
+	margin: 0;
+	font-size: 10pt;
+	line-height: 20px;
+}
+
+#subcontrollers p.icon, #controls #actionBtns p.icon{
+	cursor: pointer;
+	float: left;
+	margin: 0;
+	margin-right: 10px;
+	position: relative;
+}
+
+#audioplaylist {
+	position: relative;
+	font-size: 10pt;
+}
+
+#audioplaylist-inner {
+	width: 945px;
+	margin: 0 auto;
+	padding: 5px 0 15px;
+}
+
+#audioplaylist-inner a {
+	float: right;
+}
+
+#playlist{
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+}
+
+#playlist li{
+	display: block;
+	margin: 15px 0;
+}
+
+#playlist li p {
+	margin: 0;
+}
+
+#playlist li .playme{
+	cursor: pointer;
+}
+
+
+#playlist li .remove,
+#playlist li .download {
+	 float: right;
+	 cursor: pointer;
+ }
+
+#playlist li .download.downloadSingle, 
+#downloadAll .download,
+#playlist li .remove {
+	zoom: 0.9 !important;
+	-moz-transform: scale(0.9) !important;
+	-webkit-transform: scale(0.9) !important;
+	border-bottom: none !important;
+	margin-left: 10px;
+}
+
+#progressContainer{
+	font-size:10px;
+	cursor: pointer;
+	width: 450px;
+	float:left;
+}
+
+#bufferBar {
+	position: relative;
+	display: block;
+	width: 1px;
+	height: 5px;
+	top: 5px;
+}
+
+#progressBar {
+	position: relative;
+	display:block;
+	height:5px;
+	width:1px;
+}
+
+#duration {
+	width: 550px;
+	float: left;
+	margin-top: 2px;
+	margin-left: 15px;
+}
+
+#progressTime {
+	display: none;
+}
+
+#progressTotalTime {
+	float: left;
+	font-size: 11px;
+	margin-left: 10px;
+	line-height: 18px;
+}
+
+.icon {
+	height: 20px;
+	width: 20px;
+	text-indent: -9999px;
+}
+
+.icon.play {
+	background-position: -105px 0px;
+}
+
+.icon.pause {
+	background-position: -290px 0;
+	display:none;
+}
+
+.icon.play,
+.icon.pause {
+}
+
+.icon.previous {
+	background-position: -196px 0px;
+}
+
+.icon.next {
+	background-position: -242px 0px;
+}
+
+.icon.download {
+	background-position: -147px 0px !important;
+}
+
+.icon.remove {
+	background-position: -334px 0px !important;
+}
+
+.icon.repeat {
+	background-position: -511px 0px;
+}
+
+.icon.toggleplaylist {
+	background-position: -377px 0px !important;
+}
+
+.indictor {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	color: #000;
+	font-size: 10px;
+	text-align: center;
+	position: absolute;
+	padding: 1px;
+	text-indent: 0px;
+	line-height: 16px;
+}
+
+.indictor#playlistTotal {
+	right: -8px;
+	top: -8px;
+}
+
+.indictor#audiorepeat {
+	right: -8px;
+	top: -7px;
+}
+
+#downloadAll{
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	text-align: right;	
+}
+
+@media only screen and (min-width : 320px) and (max-width : 640px) {
+	#main-player-inner {
+		width: 100%;
+		padding: 14px 10px 0;
+	}
+	
+	#duration {
+		width: 51%;
+	}
+
+	#progressContainer{
+		width: 60%;
+	}
+	
+	#ct-track-desc{
+		width:10%;
+		display:none;
+	}
+	
+	.download{
+		display:none;
+	}
+	
+	#playlistTotal{
+		right:10px;
+	}
+	
+	#downloadAll{
+		display:none;
+	}
+
+}
